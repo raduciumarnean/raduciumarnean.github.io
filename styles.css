@@ -1,83 +1,136 @@
+/* Reset some basic styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    line-height: 1.6;
     background-color: #f4f4f4;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.portrait {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+/* Navbar */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.about h1 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-h2 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #555;
-}
-
-h3 {
+.about p {
     font-size: 18px;
-    margin: 10px 0;
-    color: #777;
+    line-height: 1.6;
 }
 
-.address {
-    display: block;
-    margin: 15px 0;
-    color: #007BFF;
-    text-decoration: none;
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 0;
+    text-align: center;
 }
 
-.address:hover {
-    text-decoration: underline;
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.buttons {
-    margin-top: 20px;
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
-.button {
-    display: block;
+.portfolio-items .item {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.portfolio-items .item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-items .item h3 {
+    margin-top: 15px;
+}
+
+/* Contact Section */
+.contact {
     background: #007BFF;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px 0;
-    border-radius: 5px;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #007BFF;
+    background: #fff;
     text-decoration: none;
+    border-radius: 5px;
 }
 
-.button:hover {
-    background: #0056b3;
+.contact .btn:hover {
+    background: #f4f4f4;
 }
 
-@media (min-width: 600px) {
-    .card {
-        width: 400px;
-    }
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
 
-    .portrait {
-        width: 150px;
-        height: 150px;
-    }
+.footer p {
+    margin: 0;
 }
